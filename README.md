@@ -82,6 +82,7 @@ This project can be further enhanced by adding:
 
 ## Author
 
-[Your Name/GitHub Username]
+Durjoy Barua
+github.com/iamdurjoybarua
 
 Feel free to contribute to this project by submitting pull requests with bug fixes or new features!
