@@ -61,8 +61,7 @@ The project is organized into the following Java classes:
 
 Below is an example of the output you might see after running the simulation:
 
-![Simulation Output Example]([assets/simulation_output.png](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/490f9da490ba15d726beb9d666420577e291c70e/Java%20OOP%20Project%20Simulation%20Results.png))
-
+![Simulation Output Example](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/490f9da490ba15d726beb9d666420577e291c70e/Java%20OOP%20Project%20Simulation%20Results.png)
 
 
 ## Features Demonstrated
