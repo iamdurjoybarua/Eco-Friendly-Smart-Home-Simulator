@@ -68,42 +68,42 @@ The project is organized into the following Java classes:
 
 ### Login Screen
 
-![Login Screen](link/to/your/image1.png)
+![Login Screen](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/9bae81fcad6c9a45791c52c766511997805756b8/Images/Image1.png)
 *The initial login screen of the Smart Home Controller.*
 
 ### Main Controller
 
-![Main Controller](link/to/your/image2.png)
+![Main Controller](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/9bae81fcad6c9a45791c52c766511997805756b8/Images/Image2.png)
 *The main interface for controlling smart devices.*
 
 ### Setting Brightness (80%)
 
-![Setting Brightness 80%](link/to/your/image3.png)
+![Setting Brightness 80%](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/9bae81fcad6c9a45791c52c766511997805756b8/Images/Image3.png)
 *Input dialog for setting the brightness of a light to 80%.*
 
 ### Setting Brightness (30%)
 
-![Setting Brightness 30%](link/to/your/image4.png)
+![Setting Brightness 30%](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/9bae81fcad6c9a45791c52c766511997805756b8/Images/Image4.png))
 *Input dialog for setting the brightness of a light to 30%.*
 
 ### Setting Target Temperature
 
-![Setting Target Temperature](link/to/your/image5.png)
+![Setting Target Temperature](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/9bae81fcad6c9a45791c52c766511997805756b8/Images/Image5.png)
 *Input dialog for setting the target temperature of the HVAC system.*
 
 ### Setting Fan Speed
 
-![Setting Fan Speed](link/to/your/image6.png)
+![Setting Fan Speed](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/9bae81fcad6c9a45791c52c766511997805756b8/Images/Image6.png)
 *Input dialog for setting the fan speed of the HVAC system.*
 
 ### Main Controller with Updated Status
 
-![Main Controller Updated](link/to/your/image7.png)
+![Main Controller Updated](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/9bae81fcad6c9a45791c52c766511997805756b8/Images/Image7.png)
 *The main controller after some devices have been turned on and their settings adjusted.*
 
 ### Terminal Output
 
-![Terminal Output](link/to/your/image8.png)
+![Terminal Output](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/9bae81fcad6c9a45791c52c766511997805756b8/Images/Image8.png)
 *Example of the terminal output showing device status changes.*
 
 ## Features Demonstrated
