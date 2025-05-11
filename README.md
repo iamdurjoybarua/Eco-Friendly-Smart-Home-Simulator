@@ -86,7 +86,7 @@ The project is organized into the following Java classes:
 
 ### Setting Brightness (30%)
 
-![Setting Brightness 30%](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/9bae81fcad6c9a45791c52c766511997805756b8/Images/Image4.png))
+![Setting Brightness 30%](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/9bae81fcad6c9a45791c52c766511997805756b8/Images/Image4.png)
 
 *Input dialog for setting the brightness of a light to 30%.*
 
