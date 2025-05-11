@@ -2,6 +2,280 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+// Abstract class representing a generic energy-consuming device
+abstract class EnergyConsumer {
+    private String name; // Name of the energy consumer
+    private double powerConsumption; // in Watts
+    private boolean status; // true = on, false = off
+
+    // Constructor to initialize the EnergyConsumer
+    public EnergyConsumer(String name, double powerConsumption) {
+        this.name = name;
+        this.powerConsumption = powerConsumption;
+        this.status = false; // Initially off
+    }
+
+    // Getter for the name of the device
+    public String getName() {
+        return name;
+    }
+
+    // Getter for the power consumption of the device
+    public double getPowerConsumption() {
+        return powerConsumption;
+    }
+
+    // Getter for the current status of the device (on/off)
+    public boolean isStatus() {
+        return status;
+    }
+
+    // Method to turn the device on
+    public void turnOn() {
+        this.status = true;
+        System.out.println(name + " is turned ON.");
+    }
+
+    // Method to turn the device off
+    public void turnOff() {
+        this.status = false;
+        System.out.println(name + " is turned OFF.");
+    }
+
+    // Method to calculate the energy consumption over a given duration
+    public double getEnergyConsumption(double duration) {
+        // Calculate energy consumption in kWh (kilowatt-hours)
+        if (status) {
+            return (powerConsumption * duration) / 1000.0;
+        } else {
+            return 0.0;
+        }
+    }
+
+    // Setter for the power consumption of the device (added for flexibility)
+    public void setPowerConsumption(double powerConsumption) {
+        this.powerConsumption = powerConsumption;
+    }
+
+    // Abstract method to display the specific status of the device
+    public abstract void displayStatus();
+}
+
+// Interface for renewable energy sources
+interface RenewableEnergySource {
+    // Method to generate energy (in Watts)
+    double generateEnergy();
+}
+
+// Class representing a smart light, inheriting from EnergyConsumer
+class SmartLight extends EnergyConsumer {
+    private int brightness; // 0-100
+    private boolean occupancySensor;
+
+    // Constructor for the SmartLight
+    public SmartLight(String name, double powerConsumption, boolean occupancySensor) {
+        super(name, powerConsumption);
+        this.brightness = 100; // Default brightness
+        this.occupancySensor = occupancySensor;
+    }
+
+    // Getter for the brightness level
+    public int getBrightness() {
+        return brightness;
+    }
+
+    // Method to dim the light to a specific level
+    public void dim(int level) {
+        if (level >= 0 && level <= 100) {
+            this.brightness = level;
+            // Adjust power consumption based on brightness (simple linear model)
+            super.setPowerConsumption(super.getPowerConsumption() * (level / 100.0));
+            System.out.println(getName() + " is dimmed to " + level + "%.");
+        } else {
+            System.out.println("Invalid brightness level.");
+        }
+    }
+
+    // Override the turnOn method to include occupancy sensor behavior
+    @Override
+    public void turnOn() {
+        super.turnOn(); // Call the turnOn method of the superclass
+        if (occupancySensor) {
+            System.out.println(getName() + " turned on due to occupancy.");
+        }
+    }
+
+    // Override the displayStatus method to show light-specific information
+    @Override
+    public void displayStatus() {
+        System.out.println(getName() + ": Status=" + (isStatus() ? "ON" : "OFF") + ", Brightness=" + brightness + ", Occupancy Sensor=" + (occupancySensor ? "ON" : "OFF"));
+    }
+}
+
+// Class representing a smart HVAC system
+class SmartHVAC extends EnergyConsumer {
+    private double targetTemperature; // in Celsius
+    private double currentTemperature; // in Celsius
+    private int fanSpeed; // e.g., 0 (off), 1 (low), 2 (medium), 3 (high)
+
+    // Constructor for the SmartHVAC
+    public SmartHVAC(String name, double powerConsumption) {
+        super(name, powerConsumption);
+        this.targetTemperature = 22.0; // Default target temperature
+        this.fanSpeed = 0;
+        this.currentTemperature = 25.0; // Initial current temperature
+    }
+
+    // Getter for the target temperature
+    public double getTargetTemperature() {
+        return targetTemperature;
+    }
+
+    // Setter for the target temperature
+    public void setTargetTemperature(double targetTemperature) {
+        this.targetTemperature = targetTemperature;
+        System.out.println(getName() + " target temperature set to " + targetTemperature + "°C.");
+    }
+
+    // Getter for the fan speed
+    public int getFanSpeed() {
+        return fanSpeed;
+    }
+
+    // Setter for the fan speed and adjusts power consumption accordingly
+    public void setFanSpeed(int fanSpeed) {
+        if (fanSpeed >= 0 && fanSpeed <= 3) {
+            this.fanSpeed = fanSpeed;
+            // Adjust power consumption based on fan speed (example)
+            switch (fanSpeed) {
+                case 0:
+                    super.setPowerConsumption(0); // Off
+                    break;
+                case 1:
+                    super.setPowerConsumption(100); // Low
+                    break;
+                case 2:
+                    super.setPowerConsumption(300); // Medium
+                    break;
+                case 3:
+                    super.setPowerConsumption(500); // High
+                    break;
+            }
+            System.out.println(getName() + " fan speed set to " + fanSpeed + ".");
+        } else {
+            System.out.println("Invalid fan speed.");
+        }
+    }
+
+    // Setter for the current temperature
+    public void setCurrentTemperature(double currentTemperature) {
+        this.currentTemperature = currentTemperature;
+    }
+
+    // Getter for the current temperature
+    public double getCurrentTemperature() {
+        return currentTemperature;
+    }
+
+    // Override the displayStatus method to show HVAC-specific information
+    @Override
+    public void displayStatus() {
+        System.out.println(getName() + ": Status=" + (isStatus() ? "ON" : "OFF") + ", Target Temperature=" + targetTemperature + "°C, Fan Speed=" + fanSpeed + ", Current Temperature = " + currentTemperature + "C");
+    }
+}
+
+// Class representing a smart refrigerator
+class SmartRefrigerator extends EnergyConsumer {
+    private double internalTemperature; // in Celsius
+
+    // Constructor for the SmartRefrigerator
+    public SmartRefrigerator(String name, double powerConsumption) {
+        super(name, powerConsumption);
+        this.internalTemperature = 4.0; // Default refrigerator temperature
+    }
+
+    // Getter for the internal temperature
+    public double getInternalTemperature() {
+        return internalTemperature;
+    }
+
+    // Setter for the internal temperature
+    public void setInternalTemperature(double internalTemperature) {
+        this.internalTemperature = internalTemperature;
+        System.out.println(getName() + " internal temperature set to " + internalTemperature + "°C.");
+    }
+
+    // Override the displayStatus method to show refrigerator-specific information
+    @Override
+    public void displayStatus() {
+        System.out.println(getName() + ": Status=" + (isStatus() ? "ON" : "OFF") + ", Internal Temperature=" + internalTemperature + "°C");
+    }
+}
+
+// Class representing solar panels, implementing RenewableEnergySource
+class SolarPanel implements RenewableEnergySource {
+    private double surfaceArea; // in square meters
+    private double efficiency; // as a decimal (e.g., 0.2 for 20%)
+    private double sunlightIntensity; // in Watts per square meter
+
+    // Constructor for the SolarPanel
+    public SolarPanel(double surfaceArea, double efficiency) {
+        this.surfaceArea = surfaceArea;
+        this.efficiency = efficiency;
+        this.sunlightIntensity = 0.0; // Initially no sunlight
+    }
+
+    // Setter for the sunlight intensity
+    public void setSunlightIntensity(double sunlightIntensity) {
+        this.sunlightIntensity = sunlightIntensity;
+    }
+
+    // Override the generateEnergy method to calculate energy produced by the solar panel
+    @Override
+    public double generateEnergy() {
+        // Calculate energy generated: Area * Intensity * Efficiency
+        return surfaceArea * sunlightIntensity * efficiency;
+    }
+
+    // Getter for the surface area of the solar panel
+    public double getSurfaceArea() {
+        return surfaceArea;
+    }
+}
+
+// Class representing a wind turbine
+class WindTurbine implements RenewableEnergySource {
+    private double bladeDiameter; // in meters
+    private double windSpeed; // in meters per second
+    private double efficiency;
+
+    // Constructor for the WindTurbine
+    public WindTurbine(double bladeDiameter, double efficiency) {
+        this.bladeDiameter = bladeDiameter;
+        this.windSpeed = 0.0;
+        this.efficiency = efficiency;
+    }
+
+    // Setter for the wind speed
+    public void setWindSpeed(double windSpeed) {
+        this.windSpeed = windSpeed;
+    }
+
+    // Override the generateEnergy method to calculate energy produced by the wind turbine
+    @Override
+    public double generateEnergy() {
+        // Simplified power calculation:  Power = 0.5 * airDensity * sweptArea * windSpeed^3 * efficiency
+        double airDensity = 1.225; // kg/m^3 (standard air density)
+        double sweptArea = Math.PI * Math.pow(bladeDiameter / 2, 2);
+        return 0.5 * airDensity * sweptArea * Math.pow(windSpeed, 3) * efficiency;
+    }
+
+    // Getter for the blade diameter of the wind turbine
+    public double getBladeDiameter() {
+        return bladeDiameter;
+    }
+}
+
 // Class to simulate the smart home environment
 public class SmartHomeSimulator {
     private List<EnergyConsumer> devices; // List to hold all energy-consuming devices
