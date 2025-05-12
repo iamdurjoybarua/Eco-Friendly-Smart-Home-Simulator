@@ -111,6 +111,7 @@ The project is organized into the following Java classes:
 ### Terminal Output
 
 ![Terminal Output](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/9bae81fcad6c9a45791c52c766511997805756b8/Images/Image8.png)
+
 *Example of the terminal output showing device status changes.*
 
 ## Features Demonstrated
