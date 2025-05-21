@@ -152,41 +152,41 @@ Feel free to contribute to this project by submitting pull requests with bug fix
 
 * "Head First Java" by Kathy Sierra and Bert Bates
     * Publisher: O'Reilly Media
-    * A beginner-friendly book that explains Java and OOP concepts...
+    * A beginner-friendly book that explains Java and OOP concepts (like encapsulation, inheritance, and polymorphism) with practical examples. 
     * Relevant for understanding the class structure and design in the simulator.
 * "Effective Java" by Joshua Bloch
     * Publisher: Addison-Wesley
-    * A more advanced book on Java best practices...
+    * A more advanced book on Java best practices, including how to write reusable and maintainable code (e.g., using the Singleton pattern as in SmartHomeController). 
     * Third Edition (2018) is the latest as of my knowledge base.
 * Oracle Java Documentation
     * URL: https://docs.oracle.com/en/java/
-    * Official documentation for Java SE...
+    * Official documentation for Java SE, including the API for classes like ArrayList and List used in the code. 
     * Great for understanding built-in Java features and syntax, including Swing or JavaFX for GUI development.
 * Energy Consumption Data (General Reference)
     * Source: U.S. Energy Information Administration (EIA)
     * URL: https://www.eia.gov/energyexplained/use-of-energy/
-    * Provides real-world data on energy usage...
+    * Provides real-world data on energy usage (e.g., lighting, HVAC), which I approximated in the simulator (e.g., 60W for lights, 1.5 kWh for thermostats). 
 * "Carbon Footprint of Electricity Generation" (Simplified Metrics)
     * Source: International Energy Agency (IEA)
     * URL: https://www.iea.org/
-    * The simulator uses a simplified 0.5 kg CO2 per kWh...
+    * The simulator uses a simplified 0.5 kg CO2 per kWh for carbon footprint calculations, inspired by average global estimates from such sources.
 * "The Internet of Things" by Samuel Greengard
     * Publisher: MIT Press
-    * Explores IoT concepts...
+    * Explores IoT concepts, including smart devices and energy management, which relate to the simulator’s functionality. 
     * Published in 2015, but still relevant for foundational ideas.
 * "Design Patterns: Elements of Reusable Object-Oriented Software" by Erich Gamma et al.
     * Publisher: Addison-Wesley
-    * Known as the "Gang of Four" book...
+    * Known as the "Gang of Four" book, it covers patterns like Singleton (used in SmartHomeController) and Factory (suggested as an enhancement).
     * Published in 1994, but timeless for OOP design.
 * JavaPoint Tutorials
     * URL: https://www.javatpoint.com/java-oops-concepts
-    * A free resource with examples of OOP in Java...
+    * A free resource with examples of OOP in Java, including inheritance and abstraction, which are central to the SmartDevice hierarchy.
 * GeeksforGeeks: Java Examples
     * URL: https://www.geeksforgeeks.org/java/
-    * Provides practical code snippets for Java concepts...
+    * Provides practical code snippets for Java concepts like abstract classes and collections, which I used in the simulator.
 * W3Schools Java Tutorial
     * URL: https://www.w3schools.com/java/
-    * Content: Free tutorials on Java programming, including syntax, OOP concepts..., and GUI development with Swing/JavaFX.
+    * Content: Free tutorials on Java programming, including syntax, OOP concepts (classes, objects, inheritance, abstraction), and collections (e.g., ArrayList). 
 * Google Gemini
     * https://gemini.google.com/share/968f7aae37d2
 * X Grok
