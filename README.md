@@ -108,13 +108,13 @@ The project is organized into the following Java classes:
 
 *The main controller after some devices have been turned on and their settings adjusted.*
 
-### Terminal Output
+### Terminal Output (GUI)
 
 ![Terminal Output](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/2e5e8cf265160b5211549d05c0341c25af3baa82/Images/Terminal%20Output.png)
 
 *Example of the terminal output showing device status changes.*
 
-### Sample Output
+### Sample Output (Core)
 
 ![Sample Output](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/2e5e8cf265160b5211549d05c0341c25af3baa82/Images/Sample%20Output.png)
 
