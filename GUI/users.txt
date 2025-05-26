@@ -1,3 +1,0 @@
-john:secret
-jane:12345
-guest:hello
