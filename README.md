@@ -148,12 +148,6 @@ This project can be further enhanced by adding:
 * User customization of the smart home layout within the GUI.
 * Network capabilities to simulate remote control.
 
-## Author
-
-Durjoy Barua (https://github.com/iamdurjoybarua)
-
-Feel free to contribute to this project by submitting pull requests with bug fixes or new features, especially for the GUI!
-
 ## References and Resources:
 
 * "Head First Java" by Kathy Sierra and Bert Bates
@@ -200,3 +194,8 @@ Feel free to contribute to this project by submitting pull requests with bug fix
 * Graphviz Online
     * https://dreampuf.github.io/GraphvizOnline/ 
 
+## Author
+
+Durjoy Barua (https://github.com/iamdurjoybarua)
+
+Feel free to contribute to this project by submitting pull requests with bug fixes or new features, especially for the GUI!
