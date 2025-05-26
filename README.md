@@ -68,51 +68,57 @@ The project is organized into the following Java classes:
 
 ### Login Screen
 
-![Login Screen](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/9bae81fcad6c9a45791c52c766511997805756b8/Images/Image1.png)
+![Login Screen](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/2e5e8cf265160b5211549d05c0341c25af3baa82/Images/Login%20Screen.png)
 
 *The initial login screen of the Smart Home Controller.*
 
 ### Main Controller
 
-![Main Controller](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/9bae81fcad6c9a45791c52c766511997805756b8/Images/Image2.png)
+![Main Controller](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/2e5e8cf265160b5211549d05c0341c25af3baa82/Images/Main%20Controller.png)
 
 *The main interface for controlling smart devices.*
 
 ### Setting Brightness (80%)
 
-![Setting Brightness 80%](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/9bae81fcad6c9a45791c52c766511997805756b8/Images/Image3.png)
+![Setting Brightness 80%](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/2e5e8cf265160b5211549d05c0341c25af3baa82/Images/Setting%20Brightness%20(80%25).png)
 
 *Input dialog for setting the brightness of a light to 80%.*
 
 ### Setting Brightness (30%)
 
-![Setting Brightness 30%](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/9bae81fcad6c9a45791c52c766511997805756b8/Images/Image4.png)
+![Setting Brightness 30%](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/2e5e8cf265160b5211549d05c0341c25af3baa82/Images/Setting%20Brightness%20(30%25).png)
 
 *Input dialog for setting the brightness of a light to 30%.*
 
 ### Setting Target Temperature
 
-![Setting Target Temperature](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/9bae81fcad6c9a45791c52c766511997805756b8/Images/Image5.png)
+![Setting Target Temperature](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/2e5e8cf265160b5211549d05c0341c25af3baa82/Images/Setting%20Target%20Temperature.png)
 
 *Input dialog for setting the target temperature of the HVAC system.*
 
 ### Setting Fan Speed
 
-![Setting Fan Speed](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/9bae81fcad6c9a45791c52c766511997805756b8/Images/Image6.png)
+![Setting Fan Speed](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/2e5e8cf265160b5211549d05c0341c25af3baa82/Images/Setting%20Fan%20Speed.png)
 
 *Input dialog for setting the fan speed of the HVAC system.*
 
 ### Main Controller with Updated Status
 
-![Main Controller Updated](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/9bae81fcad6c9a45791c52c766511997805756b8/Images/Image7.png)
+![Main Controller Updated](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/2e5e8cf265160b5211549d05c0341c25af3baa82/Images/Main%20Controller%20with%20Updated%20Status.png)
 
 *The main controller after some devices have been turned on and their settings adjusted.*
 
 ### Terminal Output
 
-![Terminal Output](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/9bae81fcad6c9a45791c52c766511997805756b8/Images/Image8.png)
+![Terminal Output](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/2e5e8cf265160b5211549d05c0341c25af3baa82/Images/Terminal%20Output.png)
 
 *Example of the terminal output showing device status changes.*
+
+### Sample Output
+
+![Sample Output](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/2e5e8cf265160b5211549d05c0341c25af3baa82/Images/Sample%20Output.png)
+
+*Example of the sample output showing device status changes.*
 
 ## Features Demonstrated
 
