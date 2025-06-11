@@ -2,7 +2,7 @@
 
 This repository features a **Java Object-Oriented Programming (OOP) project** that simulates a smart home environment. It incorporates various smart devices that consume energy and renewable energy sources that generate it. The simulator dynamically calculates energy consumption, renewable energy generation, and the overall cost based on a configurable electricity price. This version of the simulator provides both a **command-line interface (CLI)** and a **graphical user interface (GUI)** for interactive simulation.
 
----
+
 
 ## Project Structure
 
@@ -38,7 +38,7 @@ The project is thoughtfully organized into the following Java classes, demonstra
 * **`SmartHomeApp` (Class):**
     The main entry point of the application, responsible for launching the GUI.
 
----
+
 
 ## How to Run the Simulation
 
@@ -66,49 +66,49 @@ To run the GUI version of the Smart Home Simulator:
     ```
     This command will launch the graphical user interface of the Smart Home Simulator.
 
----
+
 
 ## GUI Screenshots
 
 Here are some screenshots showcasing the Smart Home Simulator's GUI:
 
 ### Login Screen
-![Login Screen](images/login_screen.png)
+![Login Screen](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/007c159284b4b5839a05d5af62af1552cae0bb62/Images/Login%20Screen.png)
 *The initial login screen of the Smart Home Controller.*
 
 ### Main Controller
-![Main Controller](images/main_controller.png)
+![Main Controller](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/007c159284b4b5839a05d5af62af1552cae0bb62/Images/Main%20Controller.png)
 *The main interface for controlling smart devices.*
 
 ### Setting Brightness (80%)
-![Setting Brightness 80%](images/set_brightness_80.png)
+![Setting Brightness 80%](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/007c159284b4b5839a05d5af62af1552cae0bb62/Images/Setting%20Brightness%20(80%25).png)
 *Input dialog for setting the brightness of a light to 80%.*
 
 ### Setting Brightness (30%)
-![Setting Brightness 30%](images/set_brightness_30.png)
+![Setting Brightness 30%](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/007c159284b4b5839a05d5af62af1552cae0bb62/Images/Setting%20Brightness%20(30%25).png)
 *Input dialog for setting the brightness of a light to 30%.*
 
 ### Setting Target Temperature
-![Setting Target Temperature](images/set_target_temperature.png)
+![Setting Target Temperature](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/007c159284b4b5839a05d5af62af1552cae0bb62/Images/Setting%20Target%20Temperature.png)
 *Input dialog for setting the target temperature of the HVAC system.*
 
 ### Setting Fan Speed
-![Setting Fan Speed](images/set_fan_speed.png)
+![Setting Fan Speed](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/007c159284b4b5839a05d5af62af1552cae0bb62/Images/Setting%20Fan%20Speed.png)
 *Input dialog for setting the fan speed of the HVAC system.*
 
 ### Main Controller with Updated Status
-![Main Controller Updated Status](images/main_controller_updated_status.png)
+![Main Controller Updated Status](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/007c159284b4b5839a05d5af62af1552cae0bb62/Images/Main%20Controller%20with%20Updated%20Status.png)
 *The main controller after some devices have been turned on and their settings adjusted.*
 
 ### Terminal Output (GUI)
-![Terminal Output GUI](images/terminal_output_gui.png)
+![Terminal Output GUI](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/007c159284b4b5839a05d5af62af1552cae0bb62/Images/Terminal%20Output.png)
 *Example of the terminal output showing device status changes from the GUI.*
 
 ### Sample Output (Core)
-![Sample Output Core](images/sample_output_core.png)
+![Sample Output Core](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/007c159284b4b5839a05d5af62af1552cae0bb62/Images/Sample%20Output.png)
 *Example of the core simulation output showing device status and energy calculations.*
 
----
+
 
 ## Features Demonstrated
 
@@ -124,7 +124,7 @@ This project effectively demonstrates several core **Object-Oriented Programming
 * **Event Handling:** The GUI effectively uses event listeners to respond to user interactions (e.g., button clicks, menu selections), enabling dynamic control over the simulation.
 * **Visual Representation:** The GUI provides an intuitive visual way to interact with and monitor the smart home environment, enhancing user experience.
 
----
+
 
 ## Potential Enhancements
 
@@ -140,7 +140,7 @@ This project offers a solid foundation and can be significantly expanded with th
 * User customization options for the smart home layout within the GUI (e.g., drag-and-drop device placement).
 * Network capabilities to simulate remote control of devices or communication between homes.
 
----
+
 
 ## References and Resources
 
