@@ -74,38 +74,47 @@ Here are some screenshots showcasing the Smart Home Simulator's GUI:
 
 ### Login Screen
 ![Login Screen](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/007c159284b4b5839a05d5af62af1552cae0bb62/Images/Login%20Screen.png)
+
 *The initial login screen of the Smart Home Controller.*
 
 ### Main Controller
 ![Main Controller](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/007c159284b4b5839a05d5af62af1552cae0bb62/Images/Main%20Controller.png)
+
 *The main interface for controlling smart devices.*
 
 ### Setting Brightness (80%)
 ![Setting Brightness 80%](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/007c159284b4b5839a05d5af62af1552cae0bb62/Images/Setting%20Brightness%20(80%25).png)
+
 *Input dialog for setting the brightness of a light to 80%.*
 
 ### Setting Brightness (30%)
 ![Setting Brightness 30%](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/007c159284b4b5839a05d5af62af1552cae0bb62/Images/Setting%20Brightness%20(30%25).png)
+
 *Input dialog for setting the brightness of a light to 30%.*
 
 ### Setting Target Temperature
 ![Setting Target Temperature](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/007c159284b4b5839a05d5af62af1552cae0bb62/Images/Setting%20Target%20Temperature.png)
+
 *Input dialog for setting the target temperature of the HVAC system.*
 
 ### Setting Fan Speed
 ![Setting Fan Speed](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/007c159284b4b5839a05d5af62af1552cae0bb62/Images/Setting%20Fan%20Speed.png)
+
 *Input dialog for setting the fan speed of the HVAC system.*
 
 ### Main Controller with Updated Status
 ![Main Controller Updated Status](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/007c159284b4b5839a05d5af62af1552cae0bb62/Images/Main%20Controller%20with%20Updated%20Status.png)
+
 *The main controller after some devices have been turned on and their settings adjusted.*
 
 ### Terminal Output (GUI)
 ![Terminal Output GUI](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/007c159284b4b5839a05d5af62af1552cae0bb62/Images/Terminal%20Output.png)
+
 *Example of the terminal output showing device status changes from the GUI.*
 
 ### Sample Output (Core)
 ![Sample Output Core](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/007c159284b4b5839a05d5af62af1552cae0bb62/Images/Sample%20Output.png)
+
 *Example of the core simulation output showing device status and energy calculations.*
 
 
