@@ -1,4 +1,4 @@
-# Smart Home Simulator (Java OOP Project with GUI)
+# Eco-Friendly Smart Home Simulator (Java OOP Project with GUI)
 
 This repository features a **Java Object-Oriented Programming (OOP) project** that simulates a smart home environment. It incorporates various smart devices that consume energy and renewable energy sources that generate it. The simulator dynamically calculates energy consumption, renewable energy generation, and the overall cost based on a configurable electricity price. This version of the simulator provides both a **command-line interface (CLI)** and a **graphical user interface (GUI)** for interactive simulation.
 
