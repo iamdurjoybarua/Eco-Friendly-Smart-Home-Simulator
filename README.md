@@ -195,4 +195,4 @@ This project was developed with inspiration and knowledge drawn from the followi
 
 Durjoy Barua (https://github.com/iamdurjoybarua)
 
-Feel free to contribute to this project by submitting pull requests with bug fixes or new features, especially for the GUI!
+Feel free to contribute to this project by submitting pull requests with bug fixes or new features, especially for the GUI & Database!
