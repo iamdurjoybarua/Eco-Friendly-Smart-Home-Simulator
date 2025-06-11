@@ -1,198 +1,186 @@
-# Smart Home Simulator (Java OOP Project with GUI Option)
+# Smart Home Simulator (Java OOP Project with GUI)
 
-This repository contains a Java Object-Oriented Programming (OOP) project that simulates a smart home environment. It includes various smart devices that consume energy and renewable energy sources that generate it. The simulator calculates energy consumption, renewable energy generation, and the overall cost based on a set electricity price. This version of the simulator offers both a command-line interface (CLI) and a graphical user interface (GUI) for interacting with the simulation.
+This repository features a **Java Object-Oriented Programming (OOP) project** that simulates a smart home environment. It incorporates various smart devices that consume energy and renewable energy sources that generate it. The simulator dynamically calculates energy consumption, renewable energy generation, and the overall cost based on a configurable electricity price. This version of the simulator provides both a **command-line interface (CLI)** and a **graphical user interface (GUI)** for interactive simulation.
+
+---
 
 ## Project Structure
 
-The project is organized into the following Java classes:
+The project is thoughtfully organized into the following Java classes, demonstrating key OOP principles:
 
 * **`EnergyConsumer` (Abstract Class):**
-    * Represents a generic energy-consuming device with common attributes like name, power consumption, and status (on/off).
-    * Provides methods to turn the device on/off and calculate energy consumption.
-    * Includes an abstract method `displayStatus()` to be implemented by concrete device classes.
+    Represents a generic energy-consuming device. It includes common attributes like `name`, `power consumption`, and `status (on/off)`. It provides methods to turn the device on/off, calculate energy consumption, and an abstract `displayStatus()` method for concrete device implementations.
+
 * **`RenewableEnergySource` (Interface):**
-    * Defines the contract for renewable energy sources with a `generateEnergy()` method.
+    Defines the contract for all renewable energy sources, requiring a `generateEnergy()` method.
+
 * **`SmartLight` (Class):**
-    * Extends `EnergyConsumer` and represents a smart light with brightness control and an optional occupancy sensor.
-    * Implements methods to dim the light and overrides `turnOn()` to consider the occupancy sensor.
-    * Implements `displayStatus()` to show the light's specific attributes.
+    Extends `EnergyConsumer` and models a smart light with brightness control and an optional occupancy sensor. It implements methods to dim the light and overrides `turnOn()` to account for the occupancy sensor. `displayStatus()` is also implemented to show specific light attributes.
+
 * **`SmartHVAC` (Class):**
-    * Extends `EnergyConsumer` and represents a smart HVAC (Heating, Ventilation, and Air Conditioning) system with target temperature and fan speed control.
-    * Implements methods to set target temperature and fan speed, adjusting power consumption accordingly.
-    * Implements `displayStatus()` to show the HVAC's specific attributes, including current temperature.
+    Extends `EnergyConsumer` and represents a smart HVAC (Heating, Ventilation, and Air Conditioning) system. It features target temperature and fan speed control, dynamically adjusting power consumption. `displayStatus()` displays the HVAC's specific attributes, including current temperature.
+
 * **`SmartRefrigerator` (Class):**
-    * Extends `EnergyConsumer` and represents a smart refrigerator with internal temperature control.
-    * Implements methods to set the internal temperature.
-    * Implements `displayStatus()` to show the refrigerator's internal temperature.
+    Extends `EnergyConsumer` and simulates a smart refrigerator with internal temperature control. It implements methods to set the internal temperature and overrides `displayStatus()` to show the refrigerator's internal temperature.
+
 * **`SolarPanel` (Class):**
-    * Implements `RenewableEnergySource` and represents a solar panel, generating energy based on its surface area, efficiency, and sunlight intensity.
-    * Includes a method to set the current sunlight intensity.
+    Implements `RenewableEnergySource` and represents a solar panel. It generates energy based on its surface area, efficiency, and sunlight intensity. Includes a method to set the current sunlight intensity.
+
 * **`WindTurbine` (Class):**
-    * Implements `RenewableEnergySource` and represents a wind turbine, generating energy based on its blade diameter, efficiency, and wind speed.
-    * Includes a method to set the current wind speed.
+    Implements `RenewableEnergySource` and represents a wind turbine. It generates energy based on its blade diameter, efficiency, and wind speed. Includes a method to set the current wind speed.
+
 * **`SmartHomeSimulator` (Class):**
-    * The core logic class that manages a list of `EnergyConsumer` devices and `RenewableEnergySource` objects.
-    * Allows adding devices and renewable sources to the simulation.
-    * The `simulate()` method calculates the energy consumption of all devices, the energy generated by renewable sources, and the total cost based on the provided electricity price. This class can be used by both the CLI and the GUI.
+    The core logic class that manages collections of `EnergyConsumer` devices and `RenewableEnergySource` objects. It allows adding devices and renewable sources. The `simulate()` method calculates total energy consumption, renewable energy generation, and overall cost based on the provided electricity price. This class serves as the backend for both CLI and GUI interactions.
+
 * **`SmartHomeGUI` (Class):**
-    * Provides a graphical user interface for interacting with the `SmartHomeSimulator`.
-    * Allows users to add and control devices, view energy consumption and generation, and set simulation parameters.
-    * Utilizes Java Swing or JavaFX for creating the user interface components.
+    Provides a **graphical user interface** for the `SmartHomeSimulator`. Users can add and control devices, monitor energy consumption and generation, and set simulation parameters. It's built using **Java Swing** (or JavaFX, depending on implementation specifics).
+
 * **`SmartHomeApp` (Class):**
-    * The main entry point of the application, launching the GUI.
+    The main entry point of the application, responsible for launching the GUI.
+
+---
 
 ## How to Run the Simulation
 
 ### Graphical User Interface (GUI)
+
+To run the GUI version of the Smart Home Simulator:
 
 1.  **Ensure you have a Java Development Kit (JDK) installed.**
 2.  **Clone the repository** to your local machine:
     ```bash
     git clone <repository_url>
     ```
-3.  **Navigate to the project directory:**
+    (Replace `<repository_url>` with the actual URL of your GitHub repository.)
+3.  **Navigate to the project directory**:
     ```bash
     cd smart-home-simulator
     ```
-4.  **Compile all Java files, including the GUI-related classes:**
+4.  **Compile all Java files**, including the GUI-related classes:
     ```bash
     javac SmartHomeSimulator.java EnergyConsumer.java RenewableEnergySource.java SmartLight.java SmartHVAC.java SmartRefrigerator.java SolarPanel.java WindTurbine.java SmartHomeGUI.java SmartHomeApp.java
     ```
-5.  **Run the GUI application:**
+5.  **Run the GUI application**:
     ```bash
     java SmartHomeApp
     ```
     This command will launch the graphical user interface of the Smart Home Simulator.
 
+---
+
 ## GUI Screenshots
 
+Here are some screenshots showcasing the Smart Home Simulator's GUI:
+
 ### Login Screen
-
-![Login Screen](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/2e5e8cf265160b5211549d05c0341c25af3baa82/Images/Login%20Screen.png)
-
+![Login Screen](images/login_screen.png)
 *The initial login screen of the Smart Home Controller.*
 
 ### Main Controller
-
-![Main Controller](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/2e5e8cf265160b5211549d05c0341c25af3baa82/Images/Main%20Controller.png)
-
+![Main Controller](images/main_controller.png)
 *The main interface for controlling smart devices.*
 
 ### Setting Brightness (80%)
-
-![Setting Brightness 80%](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/2e5e8cf265160b5211549d05c0341c25af3baa82/Images/Setting%20Brightness%20(80%25).png)
-
+![Setting Brightness 80%](images/set_brightness_80.png)
 *Input dialog for setting the brightness of a light to 80%.*
 
 ### Setting Brightness (30%)
-
-![Setting Brightness 30%](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/2e5e8cf265160b5211549d05c0341c25af3baa82/Images/Setting%20Brightness%20(30%25).png)
-
+![Setting Brightness 30%](images/set_brightness_30.png)
 *Input dialog for setting the brightness of a light to 30%.*
 
 ### Setting Target Temperature
-
-![Setting Target Temperature](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/2e5e8cf265160b5211549d05c0341c25af3baa82/Images/Setting%20Target%20Temperature.png)
-
+![Setting Target Temperature](images/set_target_temperature.png)
 *Input dialog for setting the target temperature of the HVAC system.*
 
 ### Setting Fan Speed
-
-![Setting Fan Speed](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/2e5e8cf265160b5211549d05c0341c25af3baa82/Images/Setting%20Fan%20Speed.png)
-
+![Setting Fan Speed](images/set_fan_speed.png)
 *Input dialog for setting the fan speed of the HVAC system.*
 
 ### Main Controller with Updated Status
-
-![Main Controller Updated](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/2e5e8cf265160b5211549d05c0341c25af3baa82/Images/Main%20Controller%20with%20Updated%20Status.png)
-
+![Main Controller Updated Status](images/main_controller_updated_status.png)
 *The main controller after some devices have been turned on and their settings adjusted.*
 
 ### Terminal Output (GUI)
-
-![Terminal Output](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/2e5e8cf265160b5211549d05c0341c25af3baa82/Images/Terminal%20Output.png)
-
-*Example of the terminal output showing device status changes.*
+![Terminal Output GUI](images/terminal_output_gui.png)
+*Example of the terminal output showing device status changes from the GUI.*
 
 ### Sample Output (Core)
+![Sample Output Core](images/sample_output_core.png)
+*Example of the core simulation output showing device status and energy calculations.*
 
-![Sample Output](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/2e5e8cf265160b5211549d05c0341c25af3baa82/Images/Sample%20Output.png)
-
-*Example of the sample output showing device status changes.*
+---
 
 ## Features Demonstrated
 
-This project demonstrates several key OOP concepts:
+This project effectively demonstrates several core **Object-Oriented Programming (OOP) concepts** and GUI development practices:
 
-* **Abstraction:** The `EnergyConsumer` abstract class defines a common interface for all energy-consuming devices.
-* **Inheritance:** Concrete device classes (`SmartLight`, `SmartHVAC`, `SmartRefrigerator`) inherit properties and behaviors from `EnergyConsumer` and extend them with their specific functionalities.
-* **Polymorphism:** The `displayStatus()` method is overridden in each concrete device class to provide device-specific status information. The simulation logic in `SmartHomeSimulator` can work with different device types through their common interfaces.
-* **Interfaces:** The `RenewableEnergySource` interface defines a contract for all renewable energy generators.
-* **Encapsulation:** Class members (attributes) are typically private, and access is controlled through public methods (getters and setters), ensuring data integrity.
-* **Lists and Iteration:** The `SmartHomeSimulator` uses `ArrayList` (or similar) to manage collections of devices and renewable sources and iterates through them to perform the simulation.
-* **GUI Development:** Demonstrates the use of Java Swing or JavaFX to create an interactive user interface.
-* **Event Handling:** The GUI utilizes event listeners to respond to user interactions (e.g., button clicks, menu selections), allowing for dynamic control of the simulation.
-* **Visual Representation:** The GUI provides a visual way to interact with and monitor the smart home environment.
+* **Abstraction:** The `EnergyConsumer` abstract class establishes a common interface and behavior for all energy-consuming devices, hiding their internal complexities.
+* **Inheritance:** Concrete device classes (`SmartLight`, `SmartHVAC`, `SmartRefrigerator`) inherit properties and behaviors from `EnergyConsumer`, then extend them with their unique functionalities.
+* **Polymorphism:** The `displayStatus()` method is overridden in each concrete device class to provide device-specific status information. The `SmartHomeSimulator` can interact with various device types uniformly through their common interfaces.
+* **Interfaces:** The `RenewableEnergySource` interface defines a clear contract for all renewable energy generators, promoting loose coupling.
+* **Encapsulation:** Class members (attributes) are typically kept `private`, with access controlled via `public` methods (getters and setters), ensuring data integrity and maintainability.
+* **Lists and Iteration:** The `SmartHomeSimulator` leverages `ArrayList` (or similar collections) to efficiently manage and iterate through lists of devices and renewable sources for simulation logic.
+* **GUI Development:** Showcases the practical application of **Java Swing** (or JavaFX) for building an interactive and user-friendly interface.
+* **Event Handling:** The GUI effectively uses event listeners to respond to user interactions (e.g., button clicks, menu selections), enabling dynamic control over the simulation.
+* **Visual Representation:** The GUI provides an intuitive visual way to interact with and monitor the smart home environment, enhancing user experience.
+
+---
 
 ## Potential Enhancements
 
-This project can be further enhanced by adding:
+This project offers a solid foundation and can be significantly expanded with the following enhancements:
 
-* More sophisticated energy consumption models for different devices.
-* More diverse smart devices.
-* More complex renewable energy models.
-* Real-time simulation updates in the GUI.
-* Data persistence to save and load simulation states and GUI configurations.
-* Event-driven behavior where devices react to changes.
-* Energy storage solutions.
-* User customization of the smart home layout within the GUI.
-* Network capabilities to simulate remote control.
+* More sophisticated energy consumption models for different devices, considering factors like ambient temperature, usage patterns, etc.
+* A wider variety of smart devices (e.g., smart plugs, security cameras, robotic vacuum cleaners).
+* More complex and realistic renewable energy models (e.g., historical weather data integration).
+* Real-time simulation updates and live data visualization within the GUI.
+* Data persistence using databases (like **SQLite**, as updated with `sqlite-jdbc-3.50.1.0`) or file I/O to save and load simulation states and GUI configurations.
+* Event-driven behavior where devices automatically react to changes in the environment or other devices (e.g., lights turning on when occupancy is detected).
+* Integration of energy storage solutions (e.g., batteries) to manage excess generated energy.
+* User customization options for the smart home layout within the GUI (e.g., drag-and-drop device placement).
+* Network capabilities to simulate remote control of devices or communication between homes.
 
-## References and Resources:
+---
 
-* "Head First Java" by Kathy Sierra and Bert Bates
-    * Publisher: O'Reilly Media
-    * A beginner-friendly book that explains Java and OOP concepts (like encapsulation, inheritance, and polymorphism) with practical examples. 
-    * Relevant for understanding the class structure and design in the simulator.
-* "Effective Java" by Joshua Bloch
-    * Publisher: Addison-Wesley
-    * A more advanced book on Java best practices, including how to write reusable and maintainable code (e.g., using the Singleton pattern as in SmartHomeController). 
-    * Third Edition (2018) is the latest as of my knowledge base.
-* Oracle Java Documentation
-    * URL: https://docs.oracle.com/en/java/
-    * Official documentation for Java SE, including the API for classes like ArrayList and List used in the code. 
-    * Great for understanding built-in Java features and syntax, including Swing or JavaFX for GUI development.
-* Energy Consumption Data (General Reference)
+## References and Resources
+
+This project was developed with inspiration and knowledge drawn from the following resources:
+
+* **"Head First Java"** by Kathy Sierra and Bert Bates (O'Reilly Media)
+    * A highly recommended beginner-friendly book for understanding Java and core OOP concepts like encapsulation, inheritance, and polymorphism.
+* **"Effective Java"** by Joshua Bloch (Addison-Wesley)
+    * An advanced guide on Java best practices, crucial for writing robust, reusable, and maintainable code. The Third Edition (2018) is particularly relevant.
+* **Oracle Java Documentation**
+    * URL: [https://docs.oracle.com/en/java/](https://docs.oracle.com/en/java/)
+    * The official documentation for Java SE, providing comprehensive API details for built-in Java features, including collections (like `ArrayList` and `List`) and GUI frameworks (Swing/JavaFX).
+* **Energy Consumption Data (General Reference)**
     * Source: U.S. Energy Information Administration (EIA)
-    * URL: https://www.eia.gov/energyexplained/use-of-energy/
-    * Provides real-world data on energy usage (e.g., lighting, HVAC), which I approximated in the simulator (e.g., 60W for lights, 1.5 kWh for thermostats). 
-* "Carbon Footprint of Electricity Generation" (Simplified Metrics)
+    * URL: [https://www.eia.gov/energyexplained/use-of-energy/](https://www.eia.gov/energyexplained/use-of-energy/)
+    * Provides real-world data on energy usage that influenced the approximated consumption values in the simulator (e.g., 60W for lights, 1.5 kWh for HVAC).
+* **"Carbon Footprint of Electricity Generation" (Simplified Metrics)**
     * Source: International Energy Agency (IEA)
-    * URL: https://www.iea.org/
-    * The simulator uses a simplified 0.5 kg CO2 per kWh for carbon footprint calculations, inspired by average global estimates from such sources.
-* "The Internet of Things" by Samuel Greengard
-    * Publisher: MIT Press
-    * Explores IoT concepts, including smart devices and energy management, which relate to the simulator’s functionality. 
-    * Published in 2015, but still relevant for foundational ideas.
-* "Design Patterns: Elements of Reusable Object-Oriented Software" by Erich Gamma et al.
-    * Publisher: Addison-Wesley
-    * Known as the "Gang of Four" book, it covers patterns like Singleton (used in SmartHomeController) and Factory (suggested as an enhancement).
-    * Published in 1994, but timeless for OOP design.
-* JavaPoint Tutorials
-    * URL: https://www.javatpoint.com/java-oops-concepts
-    * A free resource with examples of OOP in Java, including inheritance and abstraction, which are central to the SmartDevice hierarchy.
-* GeeksforGeeks: Java Examples
-    * URL: https://www.geeksforgeeks.org/java/
-    * Provides practical code snippets for Java concepts like abstract classes and collections, which I used in the simulator.
-* W3Schools Java Tutorial
-    * URL: https://www.w3schools.com/java/
-    * Content: Free tutorials on Java programming, including syntax, OOP concepts (classes, objects, inheritance, abstraction), and collections (e.g., ArrayList). 
-* Google Gemini
-    * https://gemini.google.com/share/968f7aae37d2
-* X Grok
-    * https://x.com/i/grok/share/i1pbBUaa8kz05cPZu6EOtLWgi
-* Graphviz Online
-    * https://dreampuf.github.io/GraphvizOnline/ 
+    * URL: [https://www.iea.org/](https://www.iea.org/)
+    * The simulator uses a simplified 0.5 kg CO2 per kWh for carbon footprint calculations, informed by average global estimates from such sources.
+* **"The Internet of Things"** by Samuel Greengard (MIT Press)
+    * Explores foundational IoT concepts, including smart devices and energy management, directly relevant to the simulator's functionality.
+* **"Design Patterns: Elements of Reusable Object-Oriented Software"** by Erich Gamma et al. ("Gang of Four" book) (Addison-Wesley)
+    * A classic in OOP design, covering patterns like Singleton (potentially useful for `SmartHomeController` if implemented) and Factory (a suggested enhancement).
+* **JavaPoint Tutorials**
+    * URL: [https://www.javatpoint.com/java-oops-concepts](https://www.javatpoint.com/java-oops-concepts)
+    * A free online resource offering practical examples of OOP in Java, including inheritance and abstraction, which are central to this project's device hierarchy.
+* **GeeksforGeeks: Java Examples**
+    * URL: [https://www.geeksforgeeks.org/java/](https://www.geeksforgeeks.org/java/)
+    * Provides numerous code snippets for various Java concepts, including abstract classes and collections.
+* **W3Schools Java Tutorial**
+    * URL: [https://www.w3schools.com/java/](https://www.w3schools.com/java/)
+    * Free tutorials on Java programming, covering syntax, OOP concepts (classes, objects, inheritance, abstraction), and collections (`ArrayList`).
+* **Google Gemini**
+    * URL: [https://gemini.google.com/share/968f7aae37d2](https://gemini.google.com/share/968f7aae37d2)
+* **X Grok**
+    * URL: [https://x.com/i/grok/share/i1pbBUaa8kz05cPZu6EOtLWgi](https://x.com/i/grok/share/i1pbBUaa8kz05cPZu6EOtLWgi)
+* **Graphviz Online**
+    * URL: [https://dreampuf.github.io/GraphvizOnline/](https://dreampuf.github.io/GraphvizOnline/)
+
 
 ## Author
 
