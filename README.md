@@ -110,7 +110,12 @@ Here are some screenshots showcasing the Smart Home Simulator's GUI:
 ### Terminal Output (GUI)
 ![Terminal Output GUI](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/007c159284b4b5839a05d5af62af1552cae0bb62/Images/Terminal%20Output.png)
 
-*Example of the terminal output showing device status changes from the GUI with Database.*
+*Example of the terminal output showing device status changes from the GUI.*
+
+### Terminal Output (Database)
+![Terminal Output GUI](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/863b2aaea4f3fb775d54359e53a8efa42fde00a8/Images/Terminal%20Output%20with%20Database.png)
+
+*Example of the terminal output showing device status changes from the Database.*
 
 ### Sample Output (Core)
 ![Sample Output Core](https://github.com/iamdurjoybarua/Eco-Friendly-Smart-Home-Simulator/blob/007c159284b4b5839a05d5af62af1552cae0bb62/Images/Sample%20Output.png)
